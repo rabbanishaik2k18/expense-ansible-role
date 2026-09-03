@@ -49,8 +49,8 @@
     path: /app
 
 - name: copy file backend
-  ansible.builtin.copy:
-    src: backend.service
+  ansible.builtin.tempalates:
+    src: backend.service.j2
     dest: /etc/systemd/system/backend.service
     
 - name: improt mysql database
