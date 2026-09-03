@@ -1,7 +1,7 @@
 - name: install mysql server
-    ansible.builtin.package:
-      name: mysql-server
-      state: installed
+  ansible.builtin.package:
+    name: mysql-server
+    state: installed
 - name: install libraries
   ansible.builtin.pip:
     name: PyMySQL
