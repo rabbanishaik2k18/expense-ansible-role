@@ -49,7 +49,7 @@
     path: /app
 
 - name: copy file backend
-  ansible.builtin.tempalates:
+  ansible.builtin.template:
     src: backend.service.j2
     dest: /etc/systemd/system/backend.service
     
