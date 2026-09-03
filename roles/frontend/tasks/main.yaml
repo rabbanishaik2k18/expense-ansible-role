@@ -1,15 +1,14 @@
- - name: install nginx
-   ansible.builtin.package:
-     name: nginx
-     state: installed
+- name: install nginx
+  ansible.builtin.package:
+    name: nginx
+  state: installed
 
 - name: service start
   ansible.builtin.service:
-    name: nginx
+  name: nginx
     enabled: yes
     state: started
        
-
 - name: remove file
   ansible.builtin.file:
     path: /usr/share/nginx/html
