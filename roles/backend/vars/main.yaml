@@ -1,3 +1,5 @@
 my_sql_password: ExpenseApp@1
 sql_user: root
 sql_host: database.awsdevsecops.online
+app_location: /app
+common: backend
